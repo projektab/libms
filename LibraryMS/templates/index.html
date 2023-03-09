@@ -1,0 +1,79 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LibraryMS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body>
+
+
+<nav class="navbar" style="background-color: #63b7f4;">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#">AB's Book Library</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/libms/login">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://offlinelibrary.com/wp-content/uploads/2021/08/Library-Management.jpg" class="d-block w-100" alt="..." height="300px" width="400px">
+    </div>
+    <div class="carousel-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Salle_de_lecture_Biblioth%C3%A8que_Mazarine_depuis_gallerie.jpg/1200px-Salle_de_lecture_Biblioth%C3%A8que_Mazarine_depuis_gallerie.jpg" class="d-block w-100" alt="..." height="300px" width="400px">
+    </div>
+    <div class="carousel-item">
+      <img src="https://cdn.booktrust.org.uk/globalassets/images/news-and-blogs/blogs-2021/09.-september/promote-your-school/promote-your-school-16x9-4.jpg?w=1200&h=675&quality=70&anchor=middlecenter" class="d-block w-100" alt="..." height="300px" width="400px">
+    </div>
+  </div>
+</div>
+<br>
+<h2 style="text-align:center;background-color: yellow">Type of Books</h2>
+<div class="container text-center" >
+  <div class="row">
+    <div class="col" style="color:blue">
+      <b><h3>Non-Fiction</h3></b>
+    </div>
+    <div class="col" style="color:blue">
+      <b><h3>Edited</h3></b>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col" style="color:blue">
+      <b><h3>Reference</h3></b>
+    </div>
+    <div class="col" style="color:blue">
+      <b><h3>Fiction</h3></b>
+    </div>
+    <div class="col" style="color:blue">
+      <b><h3>Legal</h3></b>
+    </div>
+  </div>
+</div>
+<br>
+<img src="{% static 'images/libu.png' %}" alt="" height="400px" width="650px">
+<img src="{% static 'images/libuu.png' %}" alt="" height="400px" width="650px">
+<br>
+<br>
+<div class="footer" style="color:blue;text-align:center;background-color: yellow">
+<h4>All rights reserved @AB's Book Library 2022</h4>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
